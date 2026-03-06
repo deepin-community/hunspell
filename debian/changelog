@@ -1,3 +1,85 @@
+hunspell (1.7.2+really1.7.2-10) unstable; urgency=medium
+
+  * fix libhunspell-private-devs .shlibs 
+
+ -- Rene Engelhard <rene@debian.org>  Sun, 16 Jul 2023 22:19:54 +0200
+
+hunspell (1.7.2+really1.7.2-9) unstable; urgency=medium
+
+  * upload to unstable 
+
+ -- Rene Engelhard <rene@debian.org>  Sun, 16 Jul 2023 21:57:27 +0200
+
+hunspell (1.7.2+really1.7.2-8) experimental; urgency=medium
+
+  * install private headers (csutil.hxx and htypes.hxx) into
+    a new libhunspell-private-dev (for r-cran-hunspell)
+
+ -- Rene Engelhard <rene@debian.org>  Wed, 28 Jun 2023 17:27:10 +0200
+
+hunspell (1.7.2+really1.7.2-7) unstable; urgency=medium
+
+  * upload to unstable 
+
+ -- Rene Engelhard <rene@debian.org>  Tue, 27 Jun 2023 06:26:05 +0200
+
+hunspell (1.7.2+really1.7.2-6) experimental; urgency=medium
+
+  * install wordlist2hunspell (into /usr/bin) and wordforms/makealias
+    (into /usr/lib/hunspell since the names are a bit too generic...)
+    in hunspell-tools (closes: #991616)
+  * make libhunspell-1.7-0 break hunspell (<< 1.7.2+really1.7.2) 
+
+ -- Rene Engelhard <rene@debian.org>  Sun, 18 Jun 2023 10:54:59 +0200
+
+hunspell (1.7.2+really1.7.2-5) experimental; urgency=medium
+
+  * add Breaks: r-cran-hunspell (<= 3.0.2+dfsg-1) 
+
+ -- Rene Engelhard <rene@debian.org>  Sat, 07 Jan 2023 16:01:09 +0100
+
+hunspell (1.7.2+really1.7.2-4) experimental; urgency=medium
+
+  * add patch from LibreOffice to allow longer words in hunspell-ko
+    (https://github.com/hunspell/hunspell/issues/903) 
+
+ -- Rene Engelhard <rene@debian.org>  Sat, 07 Jan 2023 14:23:59 +0100
+
+hunspell (1.7.2+really1.7.2-3) experimental; urgency=medium
+
+  * reupload as 1.7.2+really1.7.2-3 to be bigger than 1.7.2+really1.7.1-2...
+
+ -- Rene Engelhard <rene@debian.org>  Sun, 01 Jan 2023 18:36:19 +0100
+
+hunspell (1.7.2-2) experimental; urgency=medium
+
+  * reupload 1.7.2 to experimental 
+
+ -- Rene Engelhard <rene@debian.org>  Sat, 31 Dec 2022 08:38:38 +0100
+
+hunspell (1.7.2+really1.7.1-2) unstable; urgency=medium
+
+  * reupload 1.7.1 for now 
+
+ -- Rene Engelhard <rene@debian.org>  Sat, 31 Dec 2022 08:32:27 +0100
+
+hunspell (1.7.2-1) unstable; urgency=medium
+
+  * New upstream version 1.7.2
+
+ -- Rene Engelhard <rene@debian.org>  Fri, 30 Dec 2022 15:12:10 +0100
+
+hunspell (1.7.1-1) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Trim trailing whitespace.
+  * Update standards version to 4.6.0, no changes needed.
+
+  [ Rene Engelhard ]
+  * New upstream version 1.7.1
+
+ -- Rene Engelhard <rene@debian.org>  Mon, 22 Aug 2022 18:39:18 +0200
+
 hunspell (1.7.0-4) unstable; urgency=medium
 
   [ Debian Janitor ]
@@ -12,7 +94,7 @@ hunspell (1.7.0-4) unstable; urgency=medium
 
   [ Rene Engelhard ]
   * debian/patches/Fix-string-format-error-with-recent-ncurses.diff:
-    add patch from Sven Joachim; as name says (closes: #996918) 
+    add patch from Sven Joachim; as name says (closes: #996918)
 
  -- Rene Engelhard <rene@debian.org>  Wed, 20 Oct 2021 20:36:34 +0200
 
