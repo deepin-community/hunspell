@@ -11,7 +11,7 @@ Build-Depends:
  libncurses5-dev,
  libncursesw5-dev,
  libreadline-dev,
-Standards-Version: 4.5.0
+Standards-Version: 4.6.0
 Rules-Requires-Root: no
 Section: text
 Homepage: https://hunspell.github.io/
@@ -46,6 +46,30 @@ Description: spell checker and morphological analyzer (development)
  .
  This package contains the headers and the static library.
 
+Package: libhunspell-private-dev
+Section: libdevel
+Architecture: all
+Depends: libhunspell-dev (>= ${source:Version}), libhunspell-dev (<< ${source:Version}.1~)
+Description: spell checker and morphological analyzer (private headers)
+ Hunspell is a spell checker and morphological analyzer library and program
+ designed for languages with rich morphology and complex word compounding or
+ character encoding. It is based on MySpell and features an Ispell-like
+ terminal interface using Curses library, an Ispell pipe interface and an
+ OpenOffice.org UNO module.
+ .
+ Main features:
+  - Unicode support (first 65535 Unicode characters)
+  - morphological analysis (in custom item and arrangement style)
+  - Max. 65535 affix classes and twofold affix stripping (for agglutinative
+    languages, like Azeri, Basque, Estonian, Finnish, Hungarian, Turkish, etc.)
+  - Support complex compoundings (for example, Hungarian and German)
+  - Support language specific algorithms (for example, handling Azeri
+    and Turkish dotted i, or German sharp s)
+  - Handling conditional affixes, circumfixes, fogemorphemes,
+    forbidden words, pseudoroots and homonyms.
+ .
+ This package contains some PRIVATE headers. Only use in exceptions.
+
 Package: libhunspell-1.7-0
 Section: libs
 Architecture: any
@@ -56,6 +80,7 @@ Recommends:
  hunspell-en-us | hunspell-dictionary | myspell-dictionary,
 Conflicts:
  openoffice.org-core (= 2.2.0~rc2-1),
+Breaks: r-cran-hunspell (<= 3.0.2+dfsg-1), hunspell (<< 1.7.2+really1.7.2) 
 Multi-Arch: same
 Pre-Depends:
  ${misc:Pre-Depends},

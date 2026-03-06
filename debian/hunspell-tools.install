@@ -8,3 +8,7 @@ debian/tmp/usr/bin/hunzip usr/lib/hunspell
 debian/tmp/usr/bin/hzip usr/lib/hunspell
 debian/tmp/usr/share/man/man1/hunzip.1
 debian/tmp/usr/share/man/man1/hzip.1
+./src/tools/wordlist2hunspell usr/bin
+./src/tools/wordforms usr/lib/hunspell
+./src/tools/makealias usr/lib/hunspell
+
