@@ -8,8 +8,7 @@ Uploaders:
 Build-Depends:
  debhelper-compat (= 13),
  gettext,
- libncurses5-dev,
- libncursesw5-dev,
+ libncurses-dev,
  libreadline-dev,
 Standards-Version: 4.6.0
 Rules-Requires-Root: no
